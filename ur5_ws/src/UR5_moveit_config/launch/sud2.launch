@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+    <!--Launch SUD vision object-->
+    <node pkg="sud2_moveit_config" name="sud_control_v2" type="sud_posta_controller_v2.py" output="screen"> </node>
+</launch>
+

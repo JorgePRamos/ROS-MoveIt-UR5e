@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="sud_robot">
+    
+    <!--Create the drawers box-->
+    <link name="drawers_box">
+        <inertial>
+            <origin xyz="0.0 0.0 0.505" rpy="0.0 0.0 0.0"/>
+            <mass value="50.0"/>
+            <inertia ixx="10.0" ixy="10.0" ixz="10.0" iyy="10.0" iyz="10.0" izz="10.0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0.0 0.0 0.505" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.7 0.8 1.01"/>
+            </geometry>
+            <material name="white">
+                <color rgba="1.0 1.0 1.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.505" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.7 0.8 1.01"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!--Join the UR5e with the Drawers Box-->
+    <joint name="block_ur5_connection" type="fixed">
+        <origin xyz="0.25 0.0 1.01" rpy="0.0 0.0 3.14159"/>
+        <parent link="drawers_box"/>
+        <child link="base_link"/>
+        <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+
+    <!--Import the ur5e robot-->
+    <xacro:include filename="$(find ur_description)/urdf/ur5e.xacro"/>
+
+    <!--Join ur5 and robotiq gripper-->
+    <joint name="tool0_gripper_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 1.57"/>
+        <parent link="tool0"/>
+        <child link="robotiq_arg2f_base_link"/>
+        <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+
+    <!--Import the robotiq gripper-->
+    <xacro:include filename="$(find robotiq_2f_85_gripper_visualization)/urdf/robotiq_arg2f_85_model.xacro"/>
+
+    <!--Add an additional link just for planning that represents the tip of the closed gripper-->
+    <joint name="joint_gripper_tip" type="fixed">
+        <origin xyz="0.0 0.0 0.18" rpy="0.0 0.0 0.0"/>
+        <parent link="tool0"/>
+        <child link="gripper_tip"/>
+        <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+
+    <!--Gripper tip-->
+    <link name="gripper_tip">
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.01"/>
+            <inertia ixx="0.001" ixy="0.001" ixz="0.001" iyy="0.001" iyz="0.001" izz="0.001"/>
+        </inertial>
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <sphere radius="0.01"/>
+            </geometry>
+            <material name="white">
+                <color rgba="1.0 1.0 1.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <sphere radius="0.01"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!--Gazebo specific objects-->
+    <gazebo reference="drawers_box">
+        <selfCollide>true</selfCollide>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/ur5e2f</robotNamespace>
+        </plugin>
+    </gazebo>
+    
+</robot>

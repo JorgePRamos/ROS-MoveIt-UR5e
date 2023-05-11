@@ -1,0 +1,8 @@
+prefix=/home/bicrobotics/UR5e/ur5_ws/devel
+
+Name: ur5e2f
+Description: Description of ur5e2f
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

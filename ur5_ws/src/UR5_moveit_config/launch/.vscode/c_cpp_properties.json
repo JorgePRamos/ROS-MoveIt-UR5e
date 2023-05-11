@@ -1,0 +1,38 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/bicrobotics/ur5ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/bicrobotics/ur5ws/src/aruco_ros/aruco/include/**",
+        "/home/bicrobotics/ur5ws/src/aruco_ros/aruco_ros/include/**",
+        "/home/bicrobotics/ur5ws/src/Universal_Robots_ROS_Driver/controller_stopper/include/**",
+        "/home/bicrobotics/ur5ws/src/darknet_ros/darknet_ros/include/**",
+        "/home/bicrobotics/ur5ws/src/image_pipeline/depth_image_proc/include/**",
+        "/home/bicrobotics/ur5ws/src/image_pipeline/image_proc/include/**",
+        "/home/bicrobotics/ur5ws/src/robotiq/robotiq_2f_gripper_action_server/include/**",
+        "/home/bicrobotics/ur5ws/src/robotiq/robotiq_2f_gripper_control/include/**",
+        "/home/bicrobotics/ur5ws/src/robotiq/robotiq_3f_gripper_articulated_gazebo_plugins/include/**",
+        "/home/bicrobotics/ur5ws/src/robotiq/robotiq_3f_gripper_control/include/**",
+        "/home/bicrobotics/ur5ws/src/robotiq/robotiq_ethercat/include/**",
+        "/home/bicrobotics/ur5ws/src/robotiq/robotiq_ft_sensor/include/**",
+        "/home/bicrobotics/ur5ws/src/image_pipeline/stereo_image_proc/include/**",
+        "/home/bicrobotics/ur5ws/src/Universal_Robots_ROS_Driver/ur_calibration/include/**",
+        "/home/bicrobotics/ur5ws/src/fmauch_universal_robot/ur_kinematics/include/**",
+        "/home/bicrobotics/ur5ws/src/Universal_Robots_ROS_Driver/ur_robot_driver/include/**",
+        "/home/bicrobotics/ur5ws/src/usb_cam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

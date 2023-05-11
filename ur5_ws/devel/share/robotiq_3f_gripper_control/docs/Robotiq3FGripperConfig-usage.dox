@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="robotiq_3f_gripper_control" pkg="robotiq_3f_gripper_control" type="robotiq_3f_gripper_control">
+  <param name="ind_control_fingers" type="bool" value="False" />
+  <param name="ind_control_scissor" type="bool" value="False" />
+  <param name="mode" type="int" value="0" />
+  <param name="velocity" type="double" value="66.0" />
+  <param name="force" type="double" value="30.0" />
+</node>
+\endverbatim
+

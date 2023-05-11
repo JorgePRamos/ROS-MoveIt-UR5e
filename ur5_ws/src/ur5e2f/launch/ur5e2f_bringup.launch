@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <!--Start the UR Driver with the standard args for the SUD Posta Cobot-->
+    <arg name="use_tool_communication" default="true"/>
+    <arg name="robot_ip" default="192.168.1.19"/>
+    <arg name="kinematics_config" default="$(find ur5e2f)/ur5e_sud_calibration.yaml"/>
+    <arg name="tool_device_name" default="/tmp/ttyUR"/>
+    <include file="$(find ur_robot_driver)/launch/ur5e_bringup.launch" pass_all_args="true" />
+
+</launch>

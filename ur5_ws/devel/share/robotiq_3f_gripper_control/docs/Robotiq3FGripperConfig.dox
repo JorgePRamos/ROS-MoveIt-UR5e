@@ -1,0 +1,10 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~ind_control_fingers" : \b [bool] Set individual control of fingers min: False, default: False, max: True
+- \b "~ind_control_scissor" : \b [bool] Set individual control of scissor min: False, default: False, max: True
+- \b "~mode" : \b [int] The grasping mode min: -2147483648, default: 0, max: 2147483647
+- \b "~velocity" : \b [double] Set velocity for fingers min: 22.0, default: 66.0, max: 110.0
+- \b "~force" : \b [double] Set force for fingers min: 15.0, default: 30.0, max: 60.0
+

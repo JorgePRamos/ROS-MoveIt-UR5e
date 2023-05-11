@@ -1,0 +1,8 @@
+prefix=/home/bicrobotics/UR5e/ur5_ws/devel
+
+Name: robotiq_3f_gripper_joint_state_publisher
+Description: Description of robotiq_3f_gripper_joint_state_publisher
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp roslib sensor_msgs robotiq_3f_gripper_control

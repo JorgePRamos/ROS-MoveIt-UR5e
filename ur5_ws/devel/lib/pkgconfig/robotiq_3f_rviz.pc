@@ -1,0 +1,8 @@
+prefix=/home/bicrobotics/UR5e/ur5_ws/devel
+
+Name: robotiq_3f_rviz
+Description: Description of robotiq_3f_rviz
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
