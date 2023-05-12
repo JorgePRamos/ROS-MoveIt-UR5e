@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/roseus/ros/robotiq_3f_gripper_articulated_msgs/manifest.l"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/roseus/ros/robotiq_3f_gripper_articulated_msgs/msg/Robotiq3FGripperRobotInput.l"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/roseus/ros/robotiq_3f_gripper_articulated_msgs/msg/Robotiq3FGripperRobotOutput.l"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/roseus/ros/robotiq_3f_gripper_articulated_msgs/manifest.l"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/roseus/ros/robotiq_3f_gripper_articulated_msgs/msg/Robotiq3FGripperRobotInput.l"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/roseus/ros/robotiq_3f_gripper_articulated_msgs/msg/Robotiq3FGripperRobotOutput.l"
   "CMakeFiles/robotiq_3f_gripper_articulated_msgs_generate_messages_eus"
 )
 

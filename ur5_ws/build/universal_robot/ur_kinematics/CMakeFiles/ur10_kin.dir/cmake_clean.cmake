@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/libur10_kin.pdb"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/libur10_kin.so"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/libur10_kin.pdb"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/libur10_kin.so"
   "CMakeFiles/ur10_kin.dir/src/ur_kin.cpp.o"
 )
 

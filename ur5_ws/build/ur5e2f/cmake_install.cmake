@@ -1,8 +1,8 @@
-# Install script for directory: /home/bicrobotics/UR5e/ur5_ws/src/ur5e2f
+# Install script for directory: /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/ur5e2f
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/bicrobotics/UR5e/ur5_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/bicrobotics/UR5e/ur5_ws/build/ur5e2f/catkin_generated/installspace/ur5e2f.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5e2f/catkin_generated/installspace/ur5e2f.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur5e2f/cmake" TYPE FILE FILES
-    "/home/bicrobotics/UR5e/ur5_ws/build/ur5e2f/catkin_generated/installspace/ur5e2fConfig.cmake"
-    "/home/bicrobotics/UR5e/ur5_ws/build/ur5e2f/catkin_generated/installspace/ur5e2fConfig-version.cmake"
+    "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5e2f/catkin_generated/installspace/ur5e2fConfig.cmake"
+    "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5e2f/catkin_generated/installspace/ur5e2fConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur5e2f" TYPE FILE FILES "/home/bicrobotics/UR5e/ur5_ws/src/ur5e2f/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur5e2f" TYPE FILE FILES "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/ur5e2f/package.xml")
 endif()
 

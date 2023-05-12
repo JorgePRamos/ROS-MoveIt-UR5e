@@ -67,14 +67,14 @@ set(robotiq_3f_gripper_joint_state_publisher_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(robotiq_3f_gripper_joint_state_publisher_SOURCE_PREFIX /home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_joint_state_publisher)
-  set(robotiq_3f_gripper_joint_state_publisher_DEVEL_PREFIX /home/bicrobotics/UR5e/ur5_ws/devel)
+  set(robotiq_3f_gripper_joint_state_publisher_SOURCE_PREFIX /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_joint_state_publisher)
+  set(robotiq_3f_gripper_joint_state_publisher_DEVEL_PREFIX /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel)
   set(robotiq_3f_gripper_joint_state_publisher_INSTALL_PREFIX "")
   set(robotiq_3f_gripper_joint_state_publisher_PREFIX ${robotiq_3f_gripper_joint_state_publisher_DEVEL_PREFIX})
 else()
   set(robotiq_3f_gripper_joint_state_publisher_SOURCE_PREFIX "")
   set(robotiq_3f_gripper_joint_state_publisher_DEVEL_PREFIX "")
-  set(robotiq_3f_gripper_joint_state_publisher_INSTALL_PREFIX /home/bicrobotics/UR5e/ur5_ws/install)
+  set(robotiq_3f_gripper_joint_state_publisher_INSTALL_PREFIX /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install)
   set(robotiq_3f_gripper_joint_state_publisher_PREFIX ${robotiq_3f_gripper_joint_state_publisher_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/bicrobotics/UR5e/ur5_ws/install/lib;/home/bicrobotics/UR5e/ur5_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install/lib;/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -185,7 +185,7 @@ foreach(t ${robotiq_3f_gripper_joint_state_publisher_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;roslib;sensor_msgs;robotiq_3f_gripper_control")
+set(depends "message_runtime;robotiq_3f_gripper_control;roscpp;roslib;sensor_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

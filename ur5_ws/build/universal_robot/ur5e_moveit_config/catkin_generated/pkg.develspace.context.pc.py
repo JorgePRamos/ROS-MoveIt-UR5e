@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "ur5e_moveit_config"
-PROJECT_SPACE_DIR = "/home/bicrobotics/UR5e/ur5_ws/devel"
+PROJECT_SPACE_DIR = "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel"
 PROJECT_VERSION = "1.2.5"

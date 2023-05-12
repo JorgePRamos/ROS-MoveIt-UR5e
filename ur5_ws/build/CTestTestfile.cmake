@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/bicrobotics/UR5e/ur5_ws/src
-# Build directory: /home/bicrobotics/UR5e/ur5_ws/build
+# Source directory: /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src
+# Build directory: /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -19,6 +19,8 @@ subdirs("robotiq/robotiq_2f_gripper_control")
 subdirs("robotiq/robotiq_ft_sensor")
 subdirs("robotiq/robotiq_modbus_rtu")
 subdirs("robotiq/robotiq_modbus_tcp")
+subdirs("robotiq/robotiq_2f_140_gripper_gazebo")
+subdirs("robotiq/robotiq_2f_85_gripper_gazebo")
 subdirs("robotiq/robotiq_2f_gripper_action_server")
 subdirs("robotiq/robotiq_3f_gripper_control")
 subdirs("robotiq/robotiq_3f_gripper_joint_state_publisher")

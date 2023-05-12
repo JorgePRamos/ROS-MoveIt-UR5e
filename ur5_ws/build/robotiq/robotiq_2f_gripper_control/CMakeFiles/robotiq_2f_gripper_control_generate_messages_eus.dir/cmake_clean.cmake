@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/roseus/ros/robotiq_2f_gripper_control/manifest.l"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/roseus/ros/robotiq_2f_gripper_control/msg/Robotiq2FGripper_robot_input.l"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/roseus/ros/robotiq_2f_gripper_control/msg/Robotiq2FGripper_robot_output.l"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/roseus/ros/robotiq_2f_gripper_control/manifest.l"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/roseus/ros/robotiq_2f_gripper_control/msg/Robotiq2FGripper_robot_input.l"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/roseus/ros/robotiq_2f_gripper_control/msg/Robotiq2FGripper_robot_output.l"
   "CMakeFiles/robotiq_2f_gripper_control_generate_messages_eus"
 )
 

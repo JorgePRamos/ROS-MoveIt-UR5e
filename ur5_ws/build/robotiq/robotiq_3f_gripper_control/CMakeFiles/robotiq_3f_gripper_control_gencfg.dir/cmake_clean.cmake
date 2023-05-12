@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_3f_gripper_control/Robotiq3FGripperConfig.h"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/python3/dist-packages/robotiq_3f_gripper_control/cfg/Robotiq3FGripperConfig.py"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/robotiq_3f_gripper_control/docs/Robotiq3FGripperConfig-usage.dox"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/robotiq_3f_gripper_control/docs/Robotiq3FGripperConfig.dox"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/robotiq_3f_gripper_control/docs/Robotiq3FGripperConfig.wikidoc"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_3f_gripper_control/Robotiq3FGripperConfig.h"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/python3/dist-packages/robotiq_3f_gripper_control/cfg/Robotiq3FGripperConfig.py"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/robotiq_3f_gripper_control/docs/Robotiq3FGripperConfig-usage.dox"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/robotiq_3f_gripper_control/docs/Robotiq3FGripperConfig.dox"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/robotiq_3f_gripper_control/docs/Robotiq3FGripperConfig.wikidoc"
   "CMakeFiles/robotiq_3f_gripper_control_gencfg"
 )
 

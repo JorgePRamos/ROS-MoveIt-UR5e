@@ -1,4 +1,4 @@
-prefix=/home/bicrobotics/UR5e/ur5_ws/install
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install
 
 Name: ur5e2f
 Description: Description of ur5e2f

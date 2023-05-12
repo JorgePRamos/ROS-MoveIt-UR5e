@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/libRobotiqHandPlugin.pdb"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/libRobotiqHandPlugin.so"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/libRobotiqHandPlugin.pdb"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/libRobotiqHandPlugin.so"
   "CMakeFiles/RobotiqHandPlugin.dir/src/RobotiqHandPlugin.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/libur3_moveit_plugin.pdb"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/libur3_moveit_plugin.so"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/libur3_moveit_plugin.pdb"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/libur3_moveit_plugin.so"
   "CMakeFiles/ur3_moveit_plugin.dir/src/ur_moveit_plugin.cpp.o"
 )
 

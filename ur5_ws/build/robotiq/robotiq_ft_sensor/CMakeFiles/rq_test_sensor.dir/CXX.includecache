@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_ft_sensor/ft_sensor.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_ft_sensor/ft_sensor.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_ft_sensor/sensor_accessor.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_ft_sensor/sensor_accessor.h
 ros/service_traits.h
 -
 robotiq_ft_sensor/sensor_accessorRequest.h
@@ -30,7 +30,7 @@ robotiq_ft_sensor/sensor_accessorRequest.h
 robotiq_ft_sensor/sensor_accessorResponse.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_ft_sensor/sensor_accessorRequest.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_ft_sensor/sensor_accessorRequest.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_ft_sensor/sensor_accessorResponse.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_ft_sensor/sensor_accessorResponse.h
 string
 -
 vector
@@ -62,15 +62,15 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_ft_sensor/nodes/rq_test_sensor.cpp
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_ft_sensor/nodes/rq_test_sensor.cpp
 ros/ros.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_ft_sensor/nodes/ros/ros.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_ft_sensor/nodes/ros/ros.h
 std_msgs/String.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_ft_sensor/nodes/std_msgs/String.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_ft_sensor/nodes/std_msgs/String.h
 robotiq_ft_sensor/ft_sensor.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_ft_sensor/nodes/robotiq_ft_sensor/ft_sensor.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_ft_sensor/nodes/robotiq_ft_sensor/ft_sensor.h
 robotiq_ft_sensor/sensor_accessor.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_ft_sensor/nodes/robotiq_ft_sensor/sensor_accessor.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_ft_sensor/nodes/robotiq_ft_sensor/sensor_accessor.h
 sstream
 -
 

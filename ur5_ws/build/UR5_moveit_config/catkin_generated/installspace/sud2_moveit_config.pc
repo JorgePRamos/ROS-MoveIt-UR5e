@@ -1,4 +1,4 @@
-prefix=/home/bicrobotics/UR5e/ur5_ws/install
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install
 
 Name: sud2_moveit_config
 Description: Description of sud2_moveit_config

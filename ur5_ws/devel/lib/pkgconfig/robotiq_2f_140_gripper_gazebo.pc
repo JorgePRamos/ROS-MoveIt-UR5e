@@ -1,0 +1,8 @@
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel
+
+Name: robotiq_2f_140_gripper_gazebo
+Description: Description of robotiq_2f_140_gripper_gazebo
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

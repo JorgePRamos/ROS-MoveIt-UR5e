@@ -67,14 +67,14 @@ set(robotiq_2f_gripper_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(robotiq_2f_gripper_control_SOURCE_PREFIX /home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control)
-  set(robotiq_2f_gripper_control_DEVEL_PREFIX /home/bicrobotics/UR5e/ur5_ws/devel)
+  set(robotiq_2f_gripper_control_SOURCE_PREFIX /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control)
+  set(robotiq_2f_gripper_control_DEVEL_PREFIX /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel)
   set(robotiq_2f_gripper_control_INSTALL_PREFIX "")
   set(robotiq_2f_gripper_control_PREFIX ${robotiq_2f_gripper_control_DEVEL_PREFIX})
 else()
   set(robotiq_2f_gripper_control_SOURCE_PREFIX "")
   set(robotiq_2f_gripper_control_DEVEL_PREFIX "")
-  set(robotiq_2f_gripper_control_INSTALL_PREFIX /home/bicrobotics/UR5e/ur5_ws/install)
+  set(robotiq_2f_gripper_control_INSTALL_PREFIX /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install)
   set(robotiq_2f_gripper_control_PREFIX ${robotiq_2f_gripper_control_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(robotiq_2f_gripper_control_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/bicrobotics/UR5e/ur5_ws/devel/include;/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/include " STREQUAL " ")
+if(NOT "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include;/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/include " STREQUAL " ")
   set(robotiq_2f_gripper_control_INCLUDE_DIRS "")
-  set(_include_dirs "/home/bicrobotics/UR5e/ur5_ws/devel/include;/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/include")
+  set(_include_dirs "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include;/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/robotiq " STREQUAL " ")
@@ -110,13 +110,13 @@ if(NOT "/home/bicrobotics/UR5e/ur5_ws/devel/include;/home/bicrobotics/UR5e/ur5_w
         message(FATAL_ERROR "Project 'robotiq_2f_gripper_control' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'robotiq_2f_gripper_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'robotiq_2f_gripper_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/${idir}'.  ${_report}")
     endif()
     _list_append_unique(robotiq_2f_gripper_control_INCLUDE_DIRS ${include})
   endforeach()
 endif()
 
-set(libraries "")
+set(libraries "robotiq_ethercat;/opt/ros/noetic/lib/libroscpp.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;/opt/ros/noetic/lib/librosconsole.so;/opt/ros/noetic/lib/librosconsole_log4cxx.so;/opt/ros/noetic/lib/librosconsole_backend_interface.so;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;/opt/ros/noetic/lib/libroscpp_serialization.so;/opt/ros/noetic/lib/libxmlrpcpp.so;/opt/ros/noetic/lib/librostime.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;/opt/ros/noetic/lib/libcpp_common.so;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;/opt/ros/noetic/lib/libsoem.a;/usr/lib/x86_64-linux-gnu/libpthread.so")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/bicrobotics/UR5e/ur5_ws/devel/lib;/home/bicrobotics/UR5e/ur5_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib;/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -185,7 +185,7 @@ foreach(t ${robotiq_2f_gripper_control_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "rospy;message_runtime;roscpp;robotiq_ethercat")
+set(depends "message_runtime;robotiq_ethercat;roscpp;rospy")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

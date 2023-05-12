@@ -1,4 +1,4 @@
-prefix=/home/bicrobotics/UR5e/ur5_ws/install
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install
 
 Name: robotiq_2f_85_gripper_visualization
 Description: Description of robotiq_2f_85_gripper_visualization

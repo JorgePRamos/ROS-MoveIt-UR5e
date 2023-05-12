@@ -1,8 +1,8 @@
-prefix=/home/bicrobotics/UR5e/ur5_ws/devel
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel
 
 Name: robotiq_2f_gripper_action_server
 Description: Description of robotiq_2f_gripper_action_server
 Version: 1.0.0
-Cflags: -I/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_action_server/include
+Cflags: -I/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_action_server/include
 Libs: -L${prefix}/lib 
-Requires: actionlib actionlib_msgs robotiq_2f_gripper_control roscpp
+Requires: actionlib actionlib_msgs control_msgs robotiq_2f_gripper_control roscpp

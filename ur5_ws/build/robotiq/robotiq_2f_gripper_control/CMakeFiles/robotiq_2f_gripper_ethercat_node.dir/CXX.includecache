@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_2f_gripper_control/Robotiq2FGripper_robot_input.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_2f_gripper_control/Robotiq2FGripper_robot_input.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_2f_gripper_control/Robotiq2FGripper_robot_output.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_2f_gripper_control/Robotiq2FGripper_robot_output.h
 string
 -
 vector
@@ -38,33 +38,33 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/include/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/include/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.h
 robotiq_2f_gripper_control/Robotiq2FGripper_robot_output.h
 -
 robotiq_2f_gripper_control/Robotiq2FGripper_robot_input.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.cpp
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.cpp
 robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.h
 robotiq_ethercat/ethercat_manager.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_ethercat/ethercat_manager.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_ethercat/ethercat_manager.h
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_node.cpp
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_node.cpp
 ros/ros.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/ros/ros.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/ros/ros.h
 boost/bind.hpp
 -
 boost/ref.hpp
 -
 robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.h
 robotiq_2f_gripper_control/Robotiq2FGripper_robot_input.h
 -
 robotiq_ethercat/ethercat_manager.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_ethercat/ethercat_manager.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_ethercat/ethercat_manager.h
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_ethercat/include/robotiq_ethercat/ethercat_manager.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_ethercat/include/robotiq_ethercat/ethercat_manager.h
 stdexcept
 -
 string

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/librobotiq_ethercat.pdb"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/librobotiq_ethercat.so"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/librobotiq_ethercat.pdb"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/librobotiq_ethercat.so"
   "CMakeFiles/robotiq_ethercat.dir/src/ethercat_manager.cpp.o"
 )
 

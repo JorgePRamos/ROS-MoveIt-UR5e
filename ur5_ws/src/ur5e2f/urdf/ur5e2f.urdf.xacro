@@ -37,6 +37,9 @@
     <!--Import the ur5e robot-->
     <xacro:include filename="$(find ur_description)/urdf/ur5e.xacro"/>
 
+    <!--Import the robotiq gripper-->
+    <xacro:include filename="$(find robotiq_2f_85_gripper_visualization)/urdf/robotiq_arg2f_85.xacro"/>
+
     <!--Join ur5 and robotiq gripper-->
     <joint name="tool0_gripper_joint" type="fixed">
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 1.57"/>
@@ -44,9 +47,6 @@
         <child link="robotiq_arg2f_base_link"/>
         <axis xyz="0.0 0.0 1.0"/>
     </joint>
-
-    <!--Import the robotiq gripper-->
-    <xacro:include filename="$(find robotiq_2f_85_gripper_visualization)/urdf/robotiq_arg2f_85_model.xacro"/>
 
     <!--Add an additional link just for planning that represents the tip of the closed gripper-->
     <joint name="joint_gripper_tip" type="fixed">

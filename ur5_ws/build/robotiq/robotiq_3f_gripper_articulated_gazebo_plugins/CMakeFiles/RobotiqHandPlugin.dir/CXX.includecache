@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotInput.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotInput.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.h
 string
 -
 vector
@@ -38,7 +38,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_articulated_gazebo_plugins/include/robotiq_3f_gripper_articulated_gazebo_plugins/RobotiqHandPlugin.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_articulated_gazebo_plugins/include/robotiq_3f_gripper_articulated_gazebo_plugins/RobotiqHandPlugin.h
 robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotInput.h
 -
 robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.h
@@ -70,7 +70,7 @@ gazebo/common/Time.hh
 gazebo/physics/physics.hh
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_articulated_gazebo_plugins/src/RobotiqHandPlugin.cpp
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_articulated_gazebo_plugins/src/RobotiqHandPlugin.cpp
 robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotInput.h
 -
 robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.h

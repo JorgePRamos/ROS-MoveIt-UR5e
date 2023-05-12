@@ -67,14 +67,14 @@ set(ur5e2f_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ur5e2f_SOURCE_PREFIX /home/bicrobotics/UR5e/ur5_ws/src/ur5e2f)
-  set(ur5e2f_DEVEL_PREFIX /home/bicrobotics/UR5e/ur5_ws/devel)
+  set(ur5e2f_SOURCE_PREFIX /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/ur5e2f)
+  set(ur5e2f_DEVEL_PREFIX /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel)
   set(ur5e2f_INSTALL_PREFIX "")
   set(ur5e2f_PREFIX ${ur5e2f_DEVEL_PREFIX})
 else()
   set(ur5e2f_SOURCE_PREFIX "")
   set(ur5e2f_DEVEL_PREFIX "")
-  set(ur5e2f_INSTALL_PREFIX /home/bicrobotics/UR5e/ur5_ws/install)
+  set(ur5e2f_INSTALL_PREFIX /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install)
   set(ur5e2f_PREFIX ${ur5e2f_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/bicrobotics/UR5e/ur5_ws/install/lib;/home/bicrobotics/UR5e/ur5_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install/lib;/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/python3/dist-packages/robotiq_3f_gripper_articulated_msgs/msg/_Robotiq3FGripperRobotInput.py"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/python3/dist-packages/robotiq_3f_gripper_articulated_msgs/msg/_Robotiq3FGripperRobotOutput.py"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/lib/python3/dist-packages/robotiq_3f_gripper_articulated_msgs/msg/__init__.py"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/python3/dist-packages/robotiq_3f_gripper_articulated_msgs/msg/_Robotiq3FGripperRobotInput.py"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/python3/dist-packages/robotiq_3f_gripper_articulated_msgs/msg/_Robotiq3FGripperRobotOutput.py"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/lib/python3/dist-packages/robotiq_3f_gripper_articulated_msgs/msg/__init__.py"
   "CMakeFiles/robotiq_3f_gripper_articulated_msgs_generate_messages_py"
 )
 

@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/bicrobotics/UR5e/ur5_ws/build'
+export PWD='/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build'

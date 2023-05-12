@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/bicrobotics/UR5e/ur5_ws/devel/setup.sh
+    local-name: /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/setup.sh

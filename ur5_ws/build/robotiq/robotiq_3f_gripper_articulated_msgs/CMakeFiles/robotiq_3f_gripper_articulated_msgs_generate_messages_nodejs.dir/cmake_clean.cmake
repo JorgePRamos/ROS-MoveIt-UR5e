@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/gennodejs/ros/robotiq_3f_gripper_articulated_msgs/msg/Robotiq3FGripperRobotInput.js"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/share/gennodejs/ros/robotiq_3f_gripper_articulated_msgs/msg/Robotiq3FGripperRobotOutput.js"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/gennodejs/ros/robotiq_3f_gripper_articulated_msgs/msg/Robotiq3FGripperRobotInput.js"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/gennodejs/ros/robotiq_3f_gripper_articulated_msgs/msg/Robotiq3FGripperRobotOutput.js"
   "CMakeFiles/robotiq_3f_gripper_articulated_msgs_generate_messages_nodejs"
 )
 

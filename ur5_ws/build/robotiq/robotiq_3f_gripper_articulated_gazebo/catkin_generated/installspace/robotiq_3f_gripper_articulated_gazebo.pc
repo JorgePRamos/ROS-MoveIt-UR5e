@@ -1,4 +1,4 @@
-prefix=/home/bicrobotics/UR5e/ur5_ws/install
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install
 
 Name: robotiq_3f_gripper_articulated_gazebo
 Description: Description of robotiq_3f_gripper_articulated_gazebo

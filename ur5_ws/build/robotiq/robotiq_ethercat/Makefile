@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bicrobotics/UR5e/ur5_ws/src
+CMAKE_SOURCE_DIR = /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bicrobotics/UR5e/ur5_ws/build
+CMAKE_BINARY_DIR = /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bicrobotics/UR5e/ur5_ws/build/CMakeFiles /home/bicrobotics/UR5e/ur5_ws/build/robotiq/robotiq_ethercat/CMakeFiles/progress.marks
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bicrobotics/UR5e/ur5_ws/build/CMakeFiles 0
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/CMakeFiles /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_ethercat/CMakeFiles/progress.marks
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/clean
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/preinstall
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/preinstall
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ roscpp_generate_messages_cpp: robotiq/robotiq_ethercat/CMakeFiles/roscpp_generat
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ robotiq_ethercat: robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/rule
 
 # fast build rule for target.
 robotiq_ethercat/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/build
 .PHONY : robotiq_ethercat/fast
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ roscpp_generate_messages_eus: robotiq/robotiq_ethercat/CMakeFiles/roscpp_generat
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ rosgraph_msgs_generate_messages_nodejs: robotiq/robotiq_ethercat/CMakeFiles/rosg
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ roscpp_generate_messages_py: robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_py.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_py.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ roscpp_generate_messages_nodejs: robotiq/robotiq_ethercat/CMakeFiles/roscpp_gene
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ rosgraph_msgs_generate_messages_cpp: robotiq/robotiq_ethercat/CMakeFiles/rosgrap
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ rosgraph_msgs_generate_messages_eus: robotiq/robotiq_ethercat/CMakeFiles/rosgrap
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ rosgraph_msgs_generate_messages_lisp: robotiq/robotiq_ethercat/CMakeFiles/rosgra
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ roscpp_generate_messages_lisp: robotiq/robotiq_ethercat/CMakeFiles/roscpp_genera
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -329,7 +329,7 @@ rosgraph_msgs_generate_messages_py: robotiq/robotiq_ethercat/CMakeFiles/rosgraph
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 src/ethercat_manager.o: src/ethercat_manager.cpp.o
@@ -338,7 +338,7 @@ src/ethercat_manager.o: src/ethercat_manager.cpp.o
 
 # target to build an object file
 src/ethercat_manager.cpp.o:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/src/ethercat_manager.cpp.o
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/src/ethercat_manager.cpp.o
 .PHONY : src/ethercat_manager.cpp.o
 
 src/ethercat_manager.i: src/ethercat_manager.cpp.i
@@ -347,7 +347,7 @@ src/ethercat_manager.i: src/ethercat_manager.cpp.i
 
 # target to preprocess a source file
 src/ethercat_manager.cpp.i:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/src/ethercat_manager.cpp.i
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/src/ethercat_manager.cpp.i
 .PHONY : src/ethercat_manager.cpp.i
 
 src/ethercat_manager.s: src/ethercat_manager.cpp.s
@@ -356,7 +356,7 @@ src/ethercat_manager.s: src/ethercat_manager.cpp.s
 
 # target to generate assembly for a file
 src/ethercat_manager.cpp.s:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/src/ethercat_manager.cpp.s
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(MAKE) -f robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/build.make robotiq/robotiq_ethercat/CMakeFiles/robotiq_ethercat.dir/src/ethercat_manager.cpp.s
 .PHONY : src/ethercat_manager.cpp.s
 
 # Help Target
@@ -397,6 +397,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bicrobotics/UR5e/ur5_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

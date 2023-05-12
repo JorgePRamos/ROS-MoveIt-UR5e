@@ -1,14 +1,14 @@
 {
-	"BUILD_DIR" : "/home/bicrobotics/UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/robotiq_3f_rviz_autogen",
-	"CMAKE_BINARY_DIR" : "/home/bicrobotics/UR5e/ur5_ws/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/bicrobotics/UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_rviz",
+	"BUILD_DIR" : "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/robotiq_3f_rviz_autogen",
+	"CMAKE_BINARY_DIR" : "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_rviz",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
-	"CMAKE_SOURCE_DIR" : "/home/bicrobotics/UR5e/ur5_ws/src",
+	"CMAKE_SOURCE_DIR" : "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src",
 	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/bicrobotics/UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/robotiq_3f_rviz_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/bicrobotics/UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/robotiq_3f_rviz_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/robotiq_3f_rviz_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/robotiq_3f_rviz_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -29,10 +29,10 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/bicrobotics/UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz",
-		"/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_rviz",
-		"/home/bicrobotics/UR5e/ur5_ws/devel/include",
-		"/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_ethercat/include",
+		"/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz",
+		"/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_rviz",
+		"/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include",
+		"/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_ethercat/include",
 		"/opt/ros/noetic/include",
 		"/opt/ros/noetic/include/xmlrpcpp",
 		"/opt/ros/noetic/include/soem",
@@ -63,20 +63,20 @@
 		"-c",
 		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/bicrobotics/UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/robotiq_3f_rviz_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/robotiq_3f_rviz_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 12,
-	"PARSE_CACHE_FILE" : "/home/bicrobotics/UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/CMakeFiles/robotiq_3f_rviz_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/CMakeFiles/robotiq_3f_rviz_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
 	"QT_VERSION_MAJOR" : 5,
-	"SETTINGS_FILE" : "/home/bicrobotics/UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/CMakeFiles/robotiq_3f_rviz_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_rviz/CMakeFiles/robotiq_3f_rviz_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_rviz/src/robotiq_3f_rviz.cpp",
+			"/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_rviz/src/robotiq_3f_rviz.cpp",
 			"MU"
 		]
 	],

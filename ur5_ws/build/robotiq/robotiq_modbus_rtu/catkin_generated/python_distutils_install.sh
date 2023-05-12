@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_modbus_rtu"
+echo_and_run cd "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_modbus_rtu"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/bicrobotics/UR5e/ur5_ws/install/lib/python3/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install/lib/python3/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/bicrobotics/UR5e/ur5_ws/install/lib/python3/dist-packages:/home/bicrobotics/UR5e/ur5_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/bicrobotics/UR5e/ur5_ws/build" \
+    PYTHONPATH="/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install/lib/python3/dist-packages:/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build" \
     "/usr/bin/python3" \
-    "/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_modbus_rtu/setup.py" \
+    "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_modbus_rtu/setup.py" \
      \
-    build --build-base "/home/bicrobotics/UR5e/ur5_ws/build/robotiq/robotiq_modbus_rtu" \
+    build --build-base "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_modbus_rtu" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/home/bicrobotics/UR5e/ur5_ws/install" --install-scripts="/home/bicrobotics/UR5e/ur5_ws/install/bin"
+    --install-layout=deb --prefix="/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install" --install-scripts="/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install/bin"

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_action_server/src/robotiq_2f_gripper_action_server_client_test.cpp
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_action_server/src/robotiq_2f_gripper_action_server_client_test.cpp
 ros/ros.h
 -
 actionlib/client/simple_action_client.h

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_ft_sensor/ft_sensor.h"
-  "/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_ft_sensor/sensor_accessor.h"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_ft_sensor/ft_sensor.h"
+  "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_ft_sensor/sensor_accessor.h"
   "CMakeFiles/robotiq_ft_sensor_generate_messages_cpp"
 )
 

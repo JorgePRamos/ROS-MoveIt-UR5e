@@ -1,4 +1,4 @@
-prefix=/home/bicrobotics/UR5e/ur5_ws/devel
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel
 
 Name: robotiq_modbus_rtu
 Description: Description of robotiq_modbus_rtu

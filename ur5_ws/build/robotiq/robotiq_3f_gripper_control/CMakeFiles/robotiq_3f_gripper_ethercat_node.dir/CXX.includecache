@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotInput.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotInput.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.h
 string
 -
 vector
@@ -38,7 +38,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/devel/include/robotiq_3f_gripper_control/Robotiq3FGripperConfig.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include/robotiq_3f_gripper_control/Robotiq3FGripperConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -56,11 +56,11 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_api.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_api.h
 robotiq_3f_gripper_control/robotiq_3f_gripper_client_base.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_client_base.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_client_base.h
 ros/ros.h
 -
 robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.h
@@ -68,17 +68,17 @@ robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotOutput.h
 robotiq_3f_gripper_articulated_msgs/Robotiq3FGripperRobotInput.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_diagnostics.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_diagnostics.h
 robotiq_3f_gripper_control/robotiq_3f_gripper_api.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_control/robotiq_3f_gripper_api.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_control/robotiq_3f_gripper_api.h
 diagnostic_updater/diagnostic_updater.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_ethercat_client.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_ethercat_client.h
 robotiq_3f_gripper_control/robotiq_3f_gripper_client_base.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_hw_interface.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_hw_interface.h
 hardware_interface/joint_command_interface.h
 -
 hardware_interface/joint_state_interface.h
@@ -92,7 +92,7 @@ robotiq_3f_gripper_control/robotiq_3f_gripper_diagnostics.h
 robotiq_3f_gripper_control/robotiq_3f_gripper_ros.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_ros.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/include/robotiq_3f_gripper_control/robotiq_3f_gripper_ros.h
 ros/ros.h
 -
 std_srvs/Trigger.h
@@ -108,13 +108,13 @@ dynamic_reconfigure/server.h
 robotiq_3f_gripper_control/Robotiq3FGripperConfig.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/src/robotiq_3f_gripper_control/robotiq_3f_gripper_ethercat_client.cpp
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/src/robotiq_3f_gripper_control/robotiq_3f_gripper_ethercat_client.cpp
 robotiq_3f_gripper_control/robotiq_3f_gripper_ethercat_client.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/src/robotiq_3f_gripper_control/robotiq_3f_gripper_control/robotiq_3f_gripper_ethercat_client.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/src/robotiq_3f_gripper_control/robotiq_3f_gripper_control/robotiq_3f_gripper_ethercat_client.h
 robotiq_ethercat/ethercat_manager.h
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/src/robotiq_3f_gripper_control/robotiq_ethercat/ethercat_manager.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/src/robotiq_3f_gripper_control/robotiq_ethercat/ethercat_manager.h
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/src/robotiq_3f_gripper_ethercat_node.cpp
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_3f_gripper_control/src/robotiq_3f_gripper_ethercat_node.cpp
 robotiq_3f_gripper_control/robotiq_3f_gripper_api.h
 -
 robotiq_3f_gripper_control/robotiq_3f_gripper_ethercat_client.h
@@ -128,7 +128,7 @@ controller_manager/controller_manager.h
 ros/ros.h
 -
 
-/home/bicrobotics/UR5e/ur5_ws/src/robotiq/robotiq_ethercat/include/robotiq_ethercat/ethercat_manager.h
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_ethercat/include/robotiq_ethercat/ethercat_manager.h
 stdexcept
 -
 string

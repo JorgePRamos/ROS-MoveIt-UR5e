@@ -1,4 +1,4 @@
-prefix=/home/bicrobotics/UR5e/ur5_ws/devel
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel
 
 Name: ur10_moveit_config
 Description: Description of ur10_moveit_config

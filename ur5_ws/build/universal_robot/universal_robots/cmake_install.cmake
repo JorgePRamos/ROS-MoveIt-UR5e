@@ -1,8 +1,8 @@
-# Install script for directory: /home/bicrobotics/UR5e/ur5_ws/src/universal_robot/universal_robots
+# Install script for directory: /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/universal_robot/universal_robots
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/bicrobotics/UR5e/ur5_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_robots" TYPE FILE FILES "/home/bicrobotics/UR5e/ur5_ws/src/universal_robot/universal_robots/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_robots" TYPE FILE FILES "/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/universal_robot/universal_robots/package.xml")
 endif()
 
