@@ -1,0 +1,8 @@
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install
+
+Name: ur5eRobotiq_moveit_config
+Description: Description of ur5eRobotiq_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -96,13 +96,6 @@
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_gripper_articulated_msgs/CMakeFiles/robotiq_3f_gripper_articulated_msgs_generate_messages_eus.dir
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_gripper_articulated_msgs/CMakeFiles/_robotiq_3f_gripper_articulated_msgs_generate_messages_check_deps_Robotiq3FGripperRobotOutput.dir
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_3f_gripper_articulated_msgs/CMakeFiles/robotiq_3f_gripper_articulated_msgs_generate_messages_lisp.dir
-/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/UR5_moveit_config/CMakeFiles/install/strip.dir
-/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/UR5_moveit_config/CMakeFiles/install/local.dir
-/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/UR5_moveit_config/CMakeFiles/install.dir
-/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/UR5_moveit_config/CMakeFiles/list_install_components.dir
-/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/UR5_moveit_config/CMakeFiles/rebuild_cache.dir
-/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/UR5_moveit_config/CMakeFiles/edit_cache.dir
-/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/UR5_moveit_config/CMakeFiles/test.dir
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/universal_robot/universal_robots/CMakeFiles/install/strip.dir
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/universal_robot/universal_robots/CMakeFiles/install/local.dir
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/universal_robot/universal_robots/CMakeFiles/install.dir
@@ -117,6 +110,13 @@
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5e2f/CMakeFiles/rebuild_cache.dir
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5e2f/CMakeFiles/edit_cache.dir
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5e2f/CMakeFiles/test.dir
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5eRobotiq_moveit_config/CMakeFiles/install/strip.dir
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5eRobotiq_moveit_config/CMakeFiles/install/local.dir
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5eRobotiq_moveit_config/CMakeFiles/install.dir
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5eRobotiq_moveit_config/CMakeFiles/list_install_components.dir
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5eRobotiq_moveit_config/CMakeFiles/rebuild_cache.dir
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5eRobotiq_moveit_config/CMakeFiles/edit_cache.dir
+/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/ur5eRobotiq_moveit_config/CMakeFiles/test.dir
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_ethercat/CMakeFiles/install/strip.dir
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_ethercat/CMakeFiles/install/local.dir
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build/robotiq/robotiq_ethercat/CMakeFiles/list_install_components.dir

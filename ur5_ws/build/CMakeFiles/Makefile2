@@ -60,9 +60,9 @@ all: robotiq/robotiq_2f_85_gripper_visualization/all
 all: robotiq/robotiq_2f_c2_gripper_visualization/all
 all: robotiq/robotiq_3f_gripper_articulated_gazebo/all
 all: robotiq/robotiq_3f_gripper_articulated_msgs/all
-all: UR5_moveit_config/all
 all: universal_robot/universal_robots/all
 all: ur5e2f/all
+all: ur5eRobotiq_moveit_config/all
 all: robotiq/robotiq_ethercat/all
 all: robotiq/robotiq_2f_gripper_control/all
 all: robotiq/robotiq_ft_sensor/all
@@ -97,9 +97,9 @@ preinstall: robotiq/robotiq_2f_85_gripper_visualization/preinstall
 preinstall: robotiq/robotiq_2f_c2_gripper_visualization/preinstall
 preinstall: robotiq/robotiq_3f_gripper_articulated_gazebo/preinstall
 preinstall: robotiq/robotiq_3f_gripper_articulated_msgs/preinstall
-preinstall: UR5_moveit_config/preinstall
 preinstall: universal_robot/universal_robots/preinstall
 preinstall: ur5e2f/preinstall
+preinstall: ur5eRobotiq_moveit_config/preinstall
 preinstall: robotiq/robotiq_ethercat/preinstall
 preinstall: robotiq/robotiq_2f_gripper_control/preinstall
 preinstall: robotiq/robotiq_ft_sensor/preinstall
@@ -139,9 +139,9 @@ clean: robotiq/robotiq_2f_85_gripper_visualization/clean
 clean: robotiq/robotiq_2f_c2_gripper_visualization/clean
 clean: robotiq/robotiq_3f_gripper_articulated_gazebo/clean
 clean: robotiq/robotiq_3f_gripper_articulated_msgs/clean
-clean: UR5_moveit_config/clean
 clean: universal_robot/universal_robots/clean
 clean: ur5e2f/clean
+clean: ur5eRobotiq_moveit_config/clean
 clean: robotiq/robotiq_ethercat/clean
 clean: robotiq/robotiq_2f_gripper_control/clean
 clean: robotiq/robotiq_ft_sensor/clean
@@ -167,24 +167,6 @@ clean: robotiq/robotiq_3f_rviz/clean
 clean: universal_robot/ur_kinematics/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory UR5_moveit_config
-
-# Recursive "all" directory target.
-UR5_moveit_config/all:
-
-.PHONY : UR5_moveit_config/all
-
-# Recursive "preinstall" directory target.
-UR5_moveit_config/preinstall:
-
-.PHONY : UR5_moveit_config/preinstall
-
-# Recursive "clean" directory target.
-UR5_moveit_config/clean:
-
-.PHONY : UR5_moveit_config/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -1089,6 +1071,24 @@ ur5e2f/preinstall:
 ur5e2f/clean:
 
 .PHONY : ur5e2f/clean
+
+#=============================================================================
+# Directory level rules for directory ur5eRobotiq_moveit_config
+
+# Recursive "all" directory target.
+ur5eRobotiq_moveit_config/all:
+
+.PHONY : ur5eRobotiq_moveit_config/all
+
+# Recursive "preinstall" directory target.
+ur5eRobotiq_moveit_config/preinstall:
+
+.PHONY : ur5eRobotiq_moveit_config/preinstall
+
+# Recursive "clean" directory target.
+ur5eRobotiq_moveit_config/clean:
+
+.PHONY : ur5eRobotiq_moveit_config/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
