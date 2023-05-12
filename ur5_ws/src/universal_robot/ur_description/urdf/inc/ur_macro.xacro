@@ -76,7 +76,9 @@
     <xacro:ur_arm_transmission prefix="${prefix}" hw_interface="${transmission_hw_interface}" />
 
     <!-- links: main serial chain -->
-    <link name="${prefix}base_link"/>
+    <link name="${prefix}base_link">
+          <parent link="drawers_box" />
+    </link>
     <link name="${prefix}base_link_inertia">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 ${pi}"/>

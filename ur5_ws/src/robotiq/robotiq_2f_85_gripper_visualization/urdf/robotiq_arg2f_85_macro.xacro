@@ -193,12 +193,14 @@
     </xacro:macro>
 
     <!-- base link -->
-    <link name="${prefix}base_link"/>
+    <link name="${prefix}base_link">
+      <parent link="drawers_box" />
+    </link>
     <joint name="${prefix}base_link-${prefix}robotiq_arg2f_base_link" type="fixed">
       <parent link="${prefix}base_link" />
       <child link="${prefix}robotiq_arg2f_base_link" />
     </joint>
-    
+
     <link name="${prefix}robotiq_arg2f_base_link">
         <inertial>
           <origin xyz="8.625E-08 -4.6583E-06 0.03145" rpy="0 0 0" />

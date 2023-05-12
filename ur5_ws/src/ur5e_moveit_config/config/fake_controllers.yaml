@@ -12,7 +12,7 @@ controller_list:
     type: $(arg fake_execution_type)
     joints:
       []
-initial:  # Define initial robot poses.
+initial:  # Define initial robot poses per group
 #  - group: ur5_arm
 #    pose: home
 

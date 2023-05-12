@@ -44,7 +44,7 @@
     <joint name="tool0_gripper_joint" type="fixed">
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 1.57"/>
         <parent link="tool0"/>
-        <child link="gripper-robotiq_arg2f_base_link"/>
+        <child link="gripper-base_link"/>
         <axis xyz="0.0 0.0 1.0"/>
     </joint>
 

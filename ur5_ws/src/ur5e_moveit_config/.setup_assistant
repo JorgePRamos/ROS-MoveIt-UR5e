@@ -6,6 +6,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/sud_robot.srdf
   CONFIG:
-    author_name: Fabio Zonfrilli
-    author_email: zonfrilli.f@pg.com
-    generated_timestamp: 1661928064
+    author_name: Jorge Pérez Ramos
+    author_email: jorgepramoscontact@gmail.com
+    generated_timestamp: 1683903133
