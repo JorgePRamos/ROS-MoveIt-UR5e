@@ -1,6 +1,6 @@
 <package>
 
-  <name>ur5e_moveit_config</name>
+  <name>ur5eRobotiq_moveit_config</name>
   <version>0.3.0</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the sud_robot with the MoveIt Motion Planning Framework
