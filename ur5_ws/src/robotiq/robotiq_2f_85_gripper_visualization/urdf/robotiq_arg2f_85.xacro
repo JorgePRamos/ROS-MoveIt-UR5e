@@ -8,6 +8,6 @@
 
   <!-- gripper -->
   <xacro:robotiq_arg2f_85 
-    prefix=""
+    prefix="gripper-"
     transmission_hw_interface="$(arg transmission_hw_interface)"/>
 </robot>
