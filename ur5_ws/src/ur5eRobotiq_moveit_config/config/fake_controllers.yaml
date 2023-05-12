@@ -13,7 +13,5 @@ controller_list:
     joints:
       []
 initial:  # Define initial robot poses per group
-#  - group: ur5_arm
-#    pose: home
-
-  []
+  - group: ur5_arm
+    pose: Home
