@@ -1,3 +1,4 @@
+<?xml version = "1.1"?>
 <package>
 
   <name>ur5eRobotiq_moveit_config</name>
@@ -26,6 +27,9 @@
   <run_depend>joint_state_publisher</run_depend>
   <run_depend>joint_state_publisher_gui</run_depend>
   <run_depend>robot_state_publisher</run_depend>
+  <run_depend>joint_trajectory_controller</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  
   <run_depend>rviz</run_depend>
   <run_depend>tf2_ros</run_depend>
   <run_depend>xacro</run_depend>

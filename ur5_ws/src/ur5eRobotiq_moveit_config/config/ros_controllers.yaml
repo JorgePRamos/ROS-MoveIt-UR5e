@@ -1,3 +1,8 @@
+# Publish joint states
+joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 100
+
 ur5_arm_controller:
   type: effort_controllers/JointTrajectoryController
   joints:
@@ -48,3 +53,17 @@ gripper_controller:
       d: 1
       i: 1
       i_clamp: 1
+
+joint_position_controller:
+    type: ur5eRobotiq_moveit_config/JointPositionController
+    arm_id: ur5_arm
+    joint_names:
+      - shoulder_pan_joint
+      - shoulder_lift_joint
+      - elbow_joint
+      - wrist_1_joint
+      - wrist_2_joint
+      - wrist_3_joint
+    gains: [
+        1, 1, 1, 1, 1, 1, 1
+    ]

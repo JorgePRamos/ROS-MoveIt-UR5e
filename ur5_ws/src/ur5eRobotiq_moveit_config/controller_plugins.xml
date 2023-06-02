@@ -1,0 +1,3 @@
+<library path="lib/libur5eRobotiq_moveit_configcontrollers_lib">
+    <class name="ur5eRobotiq_moveit_config/JointPositionController" type="ur5eRobotiq_moveit_config::JointPositionController" base_class_type="controller_interface::ControllerBase" />
+</library>
