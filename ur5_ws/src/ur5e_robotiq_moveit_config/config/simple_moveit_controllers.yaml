@@ -11,8 +11,8 @@ controller_list:
       - wrist_2_joint
       - wrist_3_joint
   - name: gripper_controller
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
+    action_ns: gripper_action
+    type: GripperCommand
     default: True
     joints:
       - gripper_finger_joint

@@ -80,13 +80,8 @@
             </geometry>
         </collision>
     </link>
-
-    <!--Gazebo specific objects-->
-    <gazebo reference="drawers_box">
-        <selfCollide>true</selfCollide>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <robotNamespace>/ur5e2f</robotNamespace>
-        </plugin>
-    </gazebo>
-    
+<gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+  </plugin>
+</gazebo>
 </robot>

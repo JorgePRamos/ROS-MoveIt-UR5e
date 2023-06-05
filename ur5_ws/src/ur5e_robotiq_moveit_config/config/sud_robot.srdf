@@ -9,30 +9,15 @@
     <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
-    <group name="ur5_arm">
-        <link name="base_link"/>
-        <link name="base_link_inertia"/>
-        <link name="shoulder_link"/>
-        <link name="upper_arm_link"/>
-        <link name="forearm_link"/>
-        <link name="wrist_1_link"/>
-        <link name="wrist_2_link"/>
-        <link name="wrist_3_link"/>
-        <link name="tool0"/>
-        <joint name="shoulder_pan_joint"/>
-        <joint name="shoulder_lift_joint"/>
-        <joint name="elbow_joint"/>
-        <joint name="wrist_1_joint"/>
-        <joint name="wrist_2_joint"/>
-        <joint name="wrist_3_joint"/>
-        <joint name="tool0_gripper_joint"/>
+    <group name="ur5e_arm">
+        <chain base_link="drawers_box" tip_link="tool0"/>
     </group>
     <group name="gripper">
         <joint name="gripper_right_finger_joint"/>
         <joint name="gripper_finger_joint"/>
     </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="gripper" parent_link="tool0" group="gripper" parent_group="ur5_arm"/>
+    <end_effector name="gripper" parent_link="tool0" group="gripper" parent_group="ur5e_arm"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="drawers_box"/>
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
