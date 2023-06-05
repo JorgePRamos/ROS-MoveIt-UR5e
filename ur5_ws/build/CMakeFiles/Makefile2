@@ -63,6 +63,7 @@ all: robotiq/robotiq_3f_gripper_articulated_msgs/all
 all: universal_robot/universal_robots/all
 all: ur5e2f/all
 all: ur5eRobotiq_moveit_config/all
+all: ur5e_robotiq_moveit_config/all
 all: robotiq/robotiq_ethercat/all
 all: robotiq/robotiq_2f_gripper_control/all
 all: robotiq/robotiq_ft_sensor/all
@@ -100,6 +101,7 @@ preinstall: robotiq/robotiq_3f_gripper_articulated_msgs/preinstall
 preinstall: universal_robot/universal_robots/preinstall
 preinstall: ur5e2f/preinstall
 preinstall: ur5eRobotiq_moveit_config/preinstall
+preinstall: ur5e_robotiq_moveit_config/preinstall
 preinstall: robotiq/robotiq_ethercat/preinstall
 preinstall: robotiq/robotiq_2f_gripper_control/preinstall
 preinstall: robotiq/robotiq_ft_sensor/preinstall
@@ -142,6 +144,7 @@ clean: robotiq/robotiq_3f_gripper_articulated_msgs/clean
 clean: universal_robot/universal_robots/clean
 clean: ur5e2f/clean
 clean: ur5eRobotiq_moveit_config/clean
+clean: ur5e_robotiq_moveit_config/clean
 clean: robotiq/robotiq_ethercat/clean
 clean: robotiq/robotiq_2f_gripper_control/clean
 clean: robotiq/robotiq_ft_sensor/clean
@@ -1089,6 +1092,24 @@ ur5eRobotiq_moveit_config/preinstall:
 ur5eRobotiq_moveit_config/clean:
 
 .PHONY : ur5eRobotiq_moveit_config/clean
+
+#=============================================================================
+# Directory level rules for directory ur5e_robotiq_moveit_config
+
+# Recursive "all" directory target.
+ur5e_robotiq_moveit_config/all:
+
+.PHONY : ur5e_robotiq_moveit_config/all
+
+# Recursive "preinstall" directory target.
+ur5e_robotiq_moveit_config/preinstall:
+
+.PHONY : ur5e_robotiq_moveit_config/preinstall
+
+# Recursive "clean" directory target.
+ur5e_robotiq_moveit_config/clean:
+
+.PHONY : ur5e_robotiq_moveit_config/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir

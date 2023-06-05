@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ur5e2f
+    relative_path: urdf/ur5e2f.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/sud_robot.srdf
+  CONFIG:
+    author_name: Jorge Perez Ramos
+    author_email: jorgepramoscontact@gmail.com
+    generated_timestamp: 1685962588
