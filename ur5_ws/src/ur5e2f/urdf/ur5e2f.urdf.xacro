@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="ur5e_robotiq">
     
-
-
     <!--Create the drawers box-->
     <link name="drawers_box">
         <inertial>
@@ -90,8 +88,10 @@
             </geometry>
         </collision>
     </link>
+
 <gazebo>
   <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
   </plugin>
 </gazebo>
+
 </robot>
