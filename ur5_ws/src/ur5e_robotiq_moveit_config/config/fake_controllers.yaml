@@ -13,7 +13,5 @@ controller_list:
     joints:
       - gripper_finger_joint
 initial:  # Define initial robot poses per group
-#  - group: ur5e_arm
-#    pose: home
-
-  []
+  - group: ur5e_arm
+    pose: Home
