@@ -1,0 +1,8 @@
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel
+
+Name: ur_dashboard_msgs
+Description: Description of ur_dashboard_msgs
+Version: 2.1.2
+Cflags: -I/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: actionlib_msgs message_runtime std_msgs

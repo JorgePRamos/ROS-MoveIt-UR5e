@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="sud_robot">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="ur5e_robotiq">
     
     <!--Create the drawers box-->
     <link name="drawers_box">
@@ -33,7 +33,15 @@
         <child link="base_link"/>
         <axis xyz="0.0 0.0 1.0"/>
     </joint>
-
+    
+    <!--Couple the Drawers to the world-->
+    <link name="world"/>
+        <joint name="world_joint" type="fixed">
+        <parent link="world"/>
+        <child link="drawers_box"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    
     <!--Import the ur5e robot-->
     <xacro:include filename="$(find ur_description)/urdf/ur5e.xacro"/>
 
@@ -81,12 +89,9 @@
         </collision>
     </link>
 
-    <!--Gazebo specific objects-->
-    <gazebo reference="drawers_box">
-        <selfCollide>true</selfCollide>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <robotNamespace>/ur5e2f</robotNamespace>
-        </plugin>
-    </gazebo>
-    
+<gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+  </plugin>
+</gazebo>
+
 </robot>
