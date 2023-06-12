@@ -61,12 +61,32 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
+        framme_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         leg_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -81,7 +101,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_link
+    Fixed Frame: framme_base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -121,9 +141,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.835398256778717
+      Pitch: 0.4003985822200775
       Target Frame: <Fixed Frame>
-      Yaw: 1.6403979063034058
+      Yaw: 2.820406675338745
     Saved: ~
 Window Geometry:
   Displays:

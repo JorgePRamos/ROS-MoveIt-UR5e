@@ -1,52 +1,24 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="ur5e_robotiq">
     
-    <!--Create the drawers box-->
-    <link name="drawers_box">
-        <inertial>
-            <origin xyz="0.0 0.0 0.505" rpy="0.0 0.0 0.0"/>
-            <mass value="50.0"/>
-            <inertia ixx="10.0" ixy="10.0" ixz="10.0" iyy="10.0" iyz="10.0" izz="10.0"/>
-        </inertial>
-        <visual>
-            <origin xyz="0.0 0.0 0.505" rpy="0.0 0.0 0.0"/>
-            <geometry>
-                <box size="0.7 0.8 1.01"/>
-            </geometry>
-            <material name="white">
-                <color rgba="1.0 1.0 1.0 1.0"/>
-                <texture filename=""/>
-            </material>
-        </visual>
-        <collision>
-            <origin xyz="0.0 0.0 0.505" rpy="0.0 0.0 0.0"/>
-            <geometry>
-                <box size="0.7 0.8 1.01"/>
-            </geometry>
-        </collision>
-    </link>
+    <!--Import frame-->
+    <xacro:include filename="$(find ur5e2f_hang)/urdf/frame.xacro"/>
 
-    <!--Join the UR5e with the Drawers Box-->
-    <joint name="block_ur5_connection" type="fixed">
-        <origin xyz="0.25 0.0 1.01" rpy="0.0 0.0 3.14159"/>
-        <parent link="drawers_box"/>
-        <child link="base_link"/>
-        <axis xyz="0.0 0.0 1.0"/>
-    </joint>
-    
-    <!--Couple the Drawers to the world-->
-    <link name="world"/>
-        <joint name="world_joint" type="fixed">
-        <parent link="world"/>
-        <child link="drawers_box"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-    </joint>
-    
     <!--Import the ur5e robot-->
     <xacro:include filename="$(find ur_description)/urdf/ur5e.xacro"/>
 
     <!--Import the robotiq gripper-->
     <xacro:include filename="$(find robotiq_2f_85_gripper_visualization)/urdf/robotiq_arg2f_85.xacro"/>
+
+
+    <!--Join the UR5e with the Drawers Box-->
+    <joint name="block_ur5_connection" type="fixed">
+        <origin xyz="0 0 -0.005" rpy="0 ${radians(180)} 0"/>
+        <parent link="top_link"/>
+        <child link="base_link"/>
+        <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+    
 
     <!--Join ur5 and robotiq gripper-->
     <joint name="tool0_gripper_joint" type="fixed">

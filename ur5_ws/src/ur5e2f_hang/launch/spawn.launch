@@ -2,7 +2,7 @@
 
 
 <launch>
-  <arg name="urdf_file" default="$(find ur5e2f_hang)/urdf/framme.xacro"/>
+  <arg name="urdf_file" default="$(find ur5e2f_hang)/urdf/ur5e2f.urdf.xacro"/>
 
   <param name="robot_description" command="$(find xacro)/xacro $(arg urdf_file)" />
 

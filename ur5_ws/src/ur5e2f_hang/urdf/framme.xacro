@@ -2,7 +2,7 @@
 <robot name="table" xmlns:xacro="http://ros.org/wiki/xacro">
 
 <!--Bottom table-->
-  <link name="base_link">
+  <link name="frame_base_link">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -42,7 +42,7 @@
 
   <joint name="joint_1" type="fixed">
     <origin rpy="0 0 0" xyz="-0.42 -0.68 0.55"/>
-    <parent link="base_link"/>
+    <parent link="frame_base_link"/>
     <child link="leg_1"/>
   </joint>
 
@@ -70,7 +70,7 @@
 
   <joint name="joint_2" type="fixed">
     <origin rpy="0 0 0" xyz="0.42 -0.68 0.55"/>
-    <parent link="base_link"/>
+    <parent link="frame_base_link"/>
     <child link="leg_2"/>
   </joint>
 
@@ -96,7 +96,7 @@
 
   <joint name="joint_3" type="fixed">
     <origin rpy="0 0 0" xyz="-0.42 0.68 0.55"/>
-    <parent link="base_link"/>
+    <parent link="frame_base_link"/>
     <child link="leg_3"/>
   </joint>
 
@@ -122,7 +122,7 @@
 
   <joint name="joint_4" type="fixed">
     <origin rpy="0 0 0" xyz="0.42 0.68 0.55"/>
-    <parent link="base_link"/>
+    <parent link="frame_base_link"/>
     <child link="leg_4"/>
   </joint>
 
