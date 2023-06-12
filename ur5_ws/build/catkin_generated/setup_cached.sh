@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src:$ROS_PACKAGE_PATH"
