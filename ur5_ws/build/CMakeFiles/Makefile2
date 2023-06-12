@@ -62,6 +62,7 @@ all: robotiq/robotiq_3f_gripper_articulated_gazebo/all
 all: robotiq/robotiq_3f_gripper_articulated_msgs/all
 all: universal_robot/universal_robots/all
 all: ur5e2f/all
+all: ur5e2f_hang/all
 all: ur5e_robotiq_moveit_config/all
 all: Universal_Robots_ROS_Driver/ur_dashboard_msgs/all
 all: robotiq/robotiq_ethercat/all
@@ -103,6 +104,7 @@ preinstall: robotiq/robotiq_3f_gripper_articulated_gazebo/preinstall
 preinstall: robotiq/robotiq_3f_gripper_articulated_msgs/preinstall
 preinstall: universal_robot/universal_robots/preinstall
 preinstall: ur5e2f/preinstall
+preinstall: ur5e2f_hang/preinstall
 preinstall: ur5e_robotiq_moveit_config/preinstall
 preinstall: Universal_Robots_ROS_Driver/ur_dashboard_msgs/preinstall
 preinstall: robotiq/robotiq_ethercat/preinstall
@@ -149,6 +151,7 @@ clean: robotiq/robotiq_3f_gripper_articulated_gazebo/clean
 clean: robotiq/robotiq_3f_gripper_articulated_msgs/clean
 clean: universal_robot/universal_robots/clean
 clean: ur5e2f/clean
+clean: ur5e2f_hang/clean
 clean: ur5e_robotiq_moveit_config/clean
 clean: Universal_Robots_ROS_Driver/ur_dashboard_msgs/clean
 clean: robotiq/robotiq_ethercat/clean
@@ -1230,6 +1233,24 @@ ur5e2f/preinstall:
 ur5e2f/clean:
 
 .PHONY : ur5e2f/clean
+
+#=============================================================================
+# Directory level rules for directory ur5e2f_hang
+
+# Recursive "all" directory target.
+ur5e2f_hang/all:
+
+.PHONY : ur5e2f_hang/all
+
+# Recursive "preinstall" directory target.
+ur5e2f_hang/preinstall:
+
+.PHONY : ur5e2f_hang/preinstall
+
+# Recursive "clean" directory target.
+ur5e2f_hang/clean:
+
+.PHONY : ur5e2f_hang/clean
 
 #=============================================================================
 # Directory level rules for directory ur5e_robotiq_moveit_config

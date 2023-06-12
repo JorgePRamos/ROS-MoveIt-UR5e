@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<robot name="table">
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="3 2 0.05"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="3 2 0.05"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="leg_1">
+    <visual>
+      <origin rpy="0 0 0" xyz="1.4 0.9 -0.5"/>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1.4 0.9 -0.5"/>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="leg_2">
+    <visual>
+      <origin rpy="0 0 0" xyz="1.4 -0.9 -0.5"/>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1.4 -0.9 -0.5"/>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="leg_3">
+    <visual>
+      <origin rpy="0 0 0" xyz="-1.4 0.9 -0.5"/>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-1.4 0.9 -0.5"/>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="leg_4">
+    <visual>
+      <origin rpy="0 0 0" xyz="-1.4 -0.9 -0.5"/>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-1.4 -0.9 -0.5"/>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="joint_1" type="fixed">
+    <origin rpy="0 0 0" xyz="1.5 1.0 -1.0"/>
+    <parent link="base_link"/>
+    <child link="leg_1"/>
+  </joint>
+
+  <joint name="joint_2" type="fixed">
+    <origin rpy="0 0 0" xyz="1.5 -1.0 -1.0"/>
+    <parent link="base_link"/>
+    <child link="leg_2"/>
+  </joint>
+
+  <joint name="joint_3" type="fixed">
+    <origin rpy="0 0 0" xyz="-1.5 1.0 -1.0"/>
+    <parent link="base_link"/>
+    <child link="leg_3"/>
+  </joint>
+
+  <joint name="joint_4" type="fixed">
+    <origin rpy="0 0 0" xyz="-1.5 -1.0 -1.0"/>
+    <parent link="base_link"/>
+    <child link="leg_4"/>
+  </joint>
+</robot>

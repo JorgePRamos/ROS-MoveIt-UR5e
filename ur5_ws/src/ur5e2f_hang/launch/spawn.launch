@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<launch>
+  <arg name="urdf_file" default="$(find ur5e2f_hang)/urdf/framme.xacro"/>
+
+  <param name="robot_description" command="$(find xacro)/xacro $(arg urdf_file)" />
+
+  <!--Combine joint values-->
+  <node name = "robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  
+  <!--Start RViz-->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ur5e2f_hang)/config/table_config.rviz"/>
+    
+  <!--Joint Values-->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="True" />
+  </node>
+
+    
+ </launch>
