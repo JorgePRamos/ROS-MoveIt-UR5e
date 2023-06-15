@@ -42,7 +42,21 @@
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
   </group>
 
+    <group if="$(eval arg('moveit_controller_manager') == 'real')">
+
+    <!-- Load joint controller configurations from YAML file to parameter server -->
+    <rosparam file="$(find ur5e_robotiq_hang_moveit_config)/config/ros_controllers.yaml" command="load"/>
+
+    <!-- Load the controllers -->
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+        output="screen" args="joint_state_controller gripper_controller ur5e_arm_controller"/>
+
+    <!-- Given the published joint states, publish tf for the robot links -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+  </group>
+
   <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
+  <!---
   <include file="$(dirname)/move_group.launch">
     <arg name="allow_trajectory_execution" value="true"/>
     <arg name="moveit_controller_manager" value="$(arg moveit_controller_manager)" />
@@ -51,7 +65,13 @@
     <arg name="debug" value="$(arg debug)"/>
     <arg name="pipeline" value="$(arg pipeline)"/>
     <arg name="load_robot_description" value="$(arg load_robot_description)"/>
-  </include> 
+  </include> -->
+
+
+    <!-- Launch moveit -->
+  <include file="$(find ur5e_robotiq_hang_moveit_config)/launch/move_group.launch">
+    <arg name="debug" default="$(arg debug)" />
+  </include>
 
   <!-- Run Rviz and load the default config to see the state of the move_group node -->
   <include file="$(dirname)/moveit_rviz.launch" if="$(arg use_rviz)">
