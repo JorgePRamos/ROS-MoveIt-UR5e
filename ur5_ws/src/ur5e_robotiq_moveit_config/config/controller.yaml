@@ -1,4 +1,4 @@
-controller_list:
+  controller_list:
   - name: arm_contoller
     action_ns: "follow_joint_trajectory"
     type: FollowJointTrajectory
