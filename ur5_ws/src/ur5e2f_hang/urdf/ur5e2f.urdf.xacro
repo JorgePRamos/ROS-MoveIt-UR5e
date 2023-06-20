@@ -11,7 +11,7 @@
     <xacro:include filename="$(find robotiq_2f_85_gripper_visualization)/urdf/robotiq_arg2f_85.xacro"/>
 
 
-    <!--Join the UR5e with the Drawers Box-->
+    <!--Join the UR5e with the frame Box-->
     <joint name="block_ur5_connection" type="fixed">
         <origin xyz="0 0 -0.005" rpy="0 ${radians(180)} ${radians(90)}"/>
         <parent link="top_link"/>
