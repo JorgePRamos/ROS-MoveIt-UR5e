@@ -83,6 +83,7 @@ all: universal_robot/ur16e_moveit_config/all
 all: universal_robot/ur3_moveit_config/all
 all: universal_robot/ur3e_moveit_config/all
 all: universal_robot/ur5_moveit_config/all
+all: ur5e_basics/all
 all: universal_robot/ur5e_moveit_config/all
 all: universal_robot/ur_description/all
 all: universal_robot/ur_gazebo/all
@@ -127,6 +128,7 @@ preinstall: universal_robot/ur16e_moveit_config/preinstall
 preinstall: universal_robot/ur3_moveit_config/preinstall
 preinstall: universal_robot/ur3e_moveit_config/preinstall
 preinstall: universal_robot/ur5_moveit_config/preinstall
+preinstall: ur5e_basics/preinstall
 preinstall: universal_robot/ur5e_moveit_config/preinstall
 preinstall: universal_robot/ur_description/preinstall
 preinstall: universal_robot/ur_gazebo/preinstall
@@ -176,6 +178,7 @@ clean: universal_robot/ur16e_moveit_config/clean
 clean: universal_robot/ur3_moveit_config/clean
 clean: universal_robot/ur3e_moveit_config/clean
 clean: universal_robot/ur5_moveit_config/clean
+clean: ur5e_basics/clean
 clean: universal_robot/ur5e_moveit_config/clean
 clean: universal_robot/ur_description/clean
 clean: universal_robot/ur_gazebo/clean
@@ -1257,6 +1260,24 @@ ur5e2f_hang/preinstall:
 ur5e2f_hang/clean:
 
 .PHONY : ur5e2f_hang/clean
+
+#=============================================================================
+# Directory level rules for directory ur5e_basics
+
+# Recursive "all" directory target.
+ur5e_basics/all:
+
+.PHONY : ur5e_basics/all
+
+# Recursive "preinstall" directory target.
+ur5e_basics/preinstall:
+
+.PHONY : ur5e_basics/preinstall
+
+# Recursive "clean" directory target.
+ur5e_basics/clean:
+
+.PHONY : ur5e_basics/clean
 
 #=============================================================================
 # Directory level rules for directory ur5e_robotiq_hang_moveit_config

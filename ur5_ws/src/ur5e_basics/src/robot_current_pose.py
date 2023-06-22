@@ -1,12 +1,21 @@
 #!/usr/bin/env python
+import sys
+import rospy
+import moveit_commander
+import geometry_msgs
+import moveit_msgs
 
-def read_current_pose(moveGroup):
+
+def readCurrentPose(moveGroup):
 
     current_pose = moveGroup.get_current_pose().pose
     return current_pose
 
-def ArrayToPose(targetArray):
-    resultingPose = Pose()
+def arrayToPose(targetArray):
+    resultingPose = geometry_msgs.msg.Pose()
+
+    """
+    print("targetArray[0]:  ",targetArray[0])
     resultingPose.position.x = targetArray[0]
     resultingPose.position.y = targetArray[1]
     resultingPose.position.z = targetArray[2]
@@ -14,15 +23,11 @@ def ArrayToPose(targetArray):
     resultingPose.orientation.y = targetArray[4]
     resultingPose.orientation.z = targetArray[5]
     resultingPose.orientation.w = targetArray[6]
-    return resultingPose
+    return resultingPose"""
 
-def cartesianMoveToPose(moveGroup, targetPose):
-    waypoints = []
-    waypoints.append(ArrayToPose(targetPose))
-
-    #TODO check last two arguments of compute_cartesian
-    (plan, fraction) = moveGroup.compute_cartesian_path(waypoints,0.005,0.0)
-    moveGroup.execute(plan, wait=True)
+def moveToPose(moveGroup, targetPose):
+    moveGroup.set_pose_target(targetPose)
+    plan = moveGroup.go()
 
 
 
@@ -39,3 +44,19 @@ if __name__ == '__main__':
 
 
     display_trajectory_publisher = rospy.Publisher('/move_group/display_planned_path',moveit_msgs.msg.DisplayTrajectory,queue_size=20)
+
+
+    #Get Origin pose
+    userInput = input("Set target pose and press any key....")
+    targetPose = readCurrentPose(move_group)
+    print(targetPose)
+
+    #Get Target pose
+    userInput = input("Set origin pose and press any key....")
+    originPose = readCurrentPose(move_group)
+    print(originPose)
+    #Start movement
+    userInput = input("Press any key to start...")
+
+    #Movement
+    #moveToPose(move_group,targetPose)
