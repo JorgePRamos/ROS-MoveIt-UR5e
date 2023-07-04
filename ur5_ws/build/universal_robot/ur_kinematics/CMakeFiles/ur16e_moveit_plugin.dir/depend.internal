@@ -50,6 +50,7 @@ universal_robot/ur_kinematics/CMakeFiles/ur16e_moveit_plugin.dir/src/ur_moveit_p
  /opt/ros/noetic/include/moveit/robot_state/attached_body.h
  /opt/ros/noetic/include/moveit/robot_state/robot_state.h
  /opt/ros/noetic/include/moveit/transforms/transforms.h
+ /opt/ros/noetic/include/moveit/utils/lexical_casts.h
  /opt/ros/noetic/include/moveit_msgs/AttachedCollisionObject.h
  /opt/ros/noetic/include/moveit_msgs/BoundingVolume.h
  /opt/ros/noetic/include/moveit_msgs/CollisionObject.h
