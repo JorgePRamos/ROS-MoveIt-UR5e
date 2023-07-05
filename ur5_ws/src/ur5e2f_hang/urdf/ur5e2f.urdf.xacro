@@ -13,7 +13,7 @@
 
     <!--Join the UR5e with the frame Box-->
     <joint name="block_ur5_connection" type="fixed">
-        <origin xyz="0 0 -0.005" rpy="0 ${radians(180)} ${radians(90)}"/>
+        <origin xyz="0 0 -0.0275" rpy="0 ${radians(180)} ${radians(90)}"/>
         <parent link="top_link"/>
         <child link="base_link"/>
         <axis xyz="0.0 0.0 1.0"/>

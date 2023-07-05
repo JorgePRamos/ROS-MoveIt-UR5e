@@ -6,7 +6,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.94 1.46 0.005"/>
+        <box size="0.94 1.46 0.04"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -15,7 +15,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.94 1.46 0.005"/>
+        <box size="0.94 1.46 0.04"/>
       </geometry>
     </collision>
   </link>
@@ -41,7 +41,7 @@
   </link>
 
   <joint name="joint_1" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.42 -0.68 0.55"/>
+    <origin rpy="0 0 0" xyz="-0.42 -0.68 0.57"/>
     <parent link="frame_base_link"/>
     <child link="leg_1"/>
   </joint>
@@ -69,7 +69,7 @@
 
 
   <joint name="joint_2" type="fixed">
-    <origin rpy="0 0 0" xyz="0.42 -0.68 0.55"/>
+    <origin rpy="0 0 0" xyz="0.42 -0.68 0.57"/>
     <parent link="frame_base_link"/>
     <child link="leg_2"/>
   </joint>
@@ -95,7 +95,7 @@
   </link>
 
   <joint name="joint_3" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.42 0.68 0.55"/>
+    <origin rpy="0 0 0" xyz="-0.42 0.68 0.57"/>
     <parent link="frame_base_link"/>
     <child link="leg_3"/>
   </joint>
@@ -121,7 +121,7 @@
   </link>
 
   <joint name="joint_4" type="fixed">
-    <origin rpy="0 0 0" xyz="0.42 0.68 0.55"/>
+    <origin rpy="0 0 0" xyz="0.42 0.68 0.57"/>
     <parent link="frame_base_link"/>
     <child link="leg_4"/>
   </joint>
@@ -131,7 +131,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.94 1.46 0.005"/>
+        <box size="0.94 1.46 0.055"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -140,13 +140,13 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.94 1.46 0.005"/>
+        <box size="0.94 1.46 0.055"/>
       </geometry>
     </collision>
   </link>
 
   <joint name="joint_top" type="fixed">
-    <origin rpy="0 0 0" xyz="0.42 -0.68 0.55"/>
+    <origin rpy="0 0 0" xyz="0.42 -0.68 0.57"/>
     <parent link="leg_3"/>
     <child link="top_link"/>
   </joint>

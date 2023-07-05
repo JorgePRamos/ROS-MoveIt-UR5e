@@ -30,10 +30,3 @@ if __name__ == '__main__':
     #Get current pose
     currentPose = rcp.readCurrentPose(move_group)
     print(">> Current pose: ",currentPose)
-
-    ur_script_pub = rospy.Publisher('/ur_driver/URScript', String, queue_size=10)
-    enable_teach_mode= True
-    if enable_teach_mode:
-        ur_script_pub.publish('set robotmode freedrive')
-    else:
-        ur_script_pub.publish('set robotmode run')
