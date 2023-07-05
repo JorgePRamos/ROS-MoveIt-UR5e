@@ -28,38 +28,7 @@
         <axis xyz="0.0 0.0 1.0"/>
     </joint>
 
-    <!--Add an additional link just for planning that represents the tip of the closed gripper-->
-    <joint name="joint_gripper_tip" type="fixed">
-        <origin xyz="0.0 0.0 0.18" rpy="0.0 0.0 0.0"/>
-        <parent link="tool0"/>
-        <child link="gripper_tip"/>
-        <axis xyz="0.0 0.0 1.0"/>
-    </joint>
-
-    <!--Gripper tip-->
-    <link name="gripper_tip">
-        <inertial>
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-            <mass value="0.01"/>
-            <inertia ixx="0.001" ixy="0.001" ixz="0.001" iyy="0.001" iyz="0.001" izz="0.001"/>
-        </inertial>
-        <visual>
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-            <geometry>
-                <sphere radius="0.01"/>
-            </geometry>
-            <material name="white">
-                <color rgba="1.0 1.0 1.0 1.0"/>
-                <texture filename=""/>
-            </material>
-        </visual>
-        <collision>
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-            <geometry>
-                <sphere radius="0.01"/>
-            </geometry>
-        </collision>
-    </link>
+   
 
 <gazebo>
   <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
