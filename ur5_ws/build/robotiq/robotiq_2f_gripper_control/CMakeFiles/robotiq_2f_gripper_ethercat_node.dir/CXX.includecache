@@ -44,12 +44,6 @@ robotiq_2f_gripper_control/Robotiq2FGripper_robot_output.h
 robotiq_2f_gripper_control/Robotiq2FGripper_robot_input.h
 -
 
-/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.cpp
-robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.h
-/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_client.h
-robotiq_ethercat/ethercat_manager.h
-/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_ethercat/ethercat_manager.h
-
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/robotiq_2f_gripper_ethercat_node.cpp
 ros/ros.h
 /home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/src/robotiq/robotiq_2f_gripper_control/src/robotiq_2f_gripper_control/ros/ros.h
