@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+"""
+Sample code which enables the return of coordenates
+published by the robotic arm
+"""
 import sys
 import rospy
 import moveit_commander

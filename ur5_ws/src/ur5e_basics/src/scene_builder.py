@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+"""
+Sample code which ilustrates the methods needed to build
+a scene using the python interface
+"""
 import sys
 import rospy
 import moveit_commander
