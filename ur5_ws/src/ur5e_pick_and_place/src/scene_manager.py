@@ -31,6 +31,9 @@ def loadMainScene(scene):
     #Create and attach tile_holder
     newObjectToScene(referenceFrameId,scene,"tile_rack",[0.34,0.34,0.29],[-0.19,0.48,0.19])
     scene.attach_box(referenceFrameId,"tile_rack")
+    
+
+    
 
     
 def newObjectToScene(referenceFrameId, scene, newObjectId, dimensions, pose):
