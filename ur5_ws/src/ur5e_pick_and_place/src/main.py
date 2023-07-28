@@ -7,8 +7,9 @@ import moveit_msgs
 from moveit_msgs.msg import CollisionObject
 from shape_msgs.msg import SolidPrimitive
 from geometry_msgs.msg import Pose
+import json
 import robot_current_pos as rcp
-
+import gripper_control as gc
 import scene_manager as sm
 #Iniciate connection 
 #Load scene
@@ -53,19 +54,51 @@ if __name__ == '__main__':
     
     if str.upper(userInput) == "P":
         print("<=  Planning mode  =>")
+        userInput = input("Load plan?")
         userLoop = ""
+        outPutPlan = {}
+        if userInput == "y":
+            with open('plan.json', 'r') as openfile:
+                # Reading from json file
+                outPutPlan = json.load(openfile)
+        
         while(userLoop == ""):
-            cp = rcp.readCurrentPose(move_group,"a")
-            print("Position: ")
-            print(cp[0])
-            print("===")
-            print("Orientation: ")
-            print(cp[1])
+            
+            newPos= rcp.readCurrentPose(move_group,"a")
+            posName = input("New pose name: ")
+            
+            outPutPlan[posName] = [newPos[0],newPos[1]]
 
             print("---------------------------------------------")
             userLoop = input("Press enter to continue any other to exit:  ")
+ 
+        with open("plan.json", "w") as outfile:
+            json.dump(outPutPlan, outfile)
+    else:
+        print("<=  Execution mode  =>")
+        movePlan = {}
+        # Opening JSON file
+        with open('plan.json', 'r') as openfile:
+        
+            # Reading from json file
+            movePlan = json.load(openfile)
 
-    
+        
+        #Execute move plan
+        for point in movePlan:
+            gripper = gc.activateGipper()
+            
+            #Open gripper
+            gripper.goto(pos= gc.FULL_CLOSE, vel = 0.100, force = 100)
+            #rcp.moveToPose(move_group,rcp.constructPose(movePlan[point]))
+            if point == "3":
+                #Tile aproximation step
+                gripper = gc.activateGipper()
+                
+                #Open gripper
+                gripper.goto(pos= gc.FULL_CLOSE, vel = 0.100, force = 100)
+
+                
     
     
 

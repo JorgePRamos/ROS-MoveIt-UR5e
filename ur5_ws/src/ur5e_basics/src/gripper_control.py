@@ -15,7 +15,7 @@ rospy.init_node('gripperControl')
 
 #Create gripper object
 gripper = rg.RobotiqCGripper()
-
+gripper.reset()
 #Connect and reset
 gripper.wait_for_connection()
 if gripper.is_reset():
