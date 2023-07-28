@@ -77,7 +77,9 @@ if __name__ == '__main__':
     else:
         print("<=  Execution mode  =>")
         movePlan = {}
+        gripper = gc.activateGipper()
         # Opening JSON file
+        
         with open('plan.json', 'r') as openfile:
         
             # Reading from json file
@@ -86,17 +88,13 @@ if __name__ == '__main__':
         
         #Execute move plan
         for point in movePlan:
-            gripper = gc.activateGipper()
-            
-            #Open gripper
-            gripper.goto(pos= gc.FULL_CLOSE, vel = 0.100, force = 100)
-            #rcp.moveToPose(move_group,rcp.constructPose(movePlan[point]))
+ 
+            rcp.moveToPose(move_group,rcp.constructPose(movePlan[point]))
             if point == "3":
                 #Tile aproximation step
-                gripper = gc.activateGipper()
+                #Open gripperç
                 
-                #Open gripper
-                gripper.goto(pos= gc.FULL_CLOSE, vel = 0.100, force = 100)
+                gripper.goto(pos= gc.FULL_OPEN, vel = 0.100, force = 100)
 
                 
     

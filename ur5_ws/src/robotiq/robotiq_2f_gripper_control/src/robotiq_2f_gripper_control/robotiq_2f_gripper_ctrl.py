@@ -20,6 +20,10 @@ class RobotiqCGripper(object):
                                            self._status_cb)
         self.cmd_pub = rospy.Publisher('Robotiq2FGripperRobotOutput', outputMsg,queue_size=20)
       
+      
+        command = _outputMsg.Robotiq2FGripper_robot_output();
+        command.rACT = 0
+        self.cmd_pub.publish(command)
         command = _outputMsg.Robotiq2FGripper_robot_output();
         command.rACT = 1
         command.rGTO = 1
