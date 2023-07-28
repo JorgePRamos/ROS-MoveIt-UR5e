@@ -11,6 +11,7 @@ import json
 import robot_current_pos as rcp
 import gripper_control as gc
 import scene_manager as sm
+import time
 #Iniciate connection 
 #Load scene
 #Load menu
@@ -36,6 +37,10 @@ if __name__ == '__main__':
 
     robot = moveit_commander.RobotCommander()
     scene = moveit_commander.PlanningSceneInterface()
+    #Gripper init
+    gripper = gc.activateGipper()
+    gripper.goto(pos= gc.FULL_OPEN, vel = 0.100, force = 100)
+    
     #Set MoveIt arm group
     group_name = "ur5e_arm"
     move_group = moveit_commander.MoveGroupCommander(group_name)
@@ -54,7 +59,7 @@ if __name__ == '__main__':
     
     if str.upper(userInput) == "P":
         print("<=  Planning mode  =>")
-        userInput = input("Load plan?")
+        userInput = input("Load plan? ")
         userLoop = ""
         outPutPlan = {}
         if userInput == "y":
@@ -64,8 +69,9 @@ if __name__ == '__main__':
         
         while(userLoop == ""):
             
-            newPos= rcp.readCurrentPose(move_group,"a")
+            
             posName = input("New pose name: ")
+            newPos= rcp.readCurrentPose(move_group,"a")
             
             outPutPlan[posName] = [newPos[0],newPos[1]]
 
@@ -77,9 +83,10 @@ if __name__ == '__main__':
     else:
         print("<=  Execution mode  =>")
         movePlan = {}
-        gripper = gc.activateGipper()
-        # Opening JSON file
+        #Connect to gripper
+
         
+        # Opening JSON file
         with open('plan.json', 'r') as openfile:
         
             # Reading from json file
@@ -87,14 +94,42 @@ if __name__ == '__main__':
 
         
         #Execute move plan
-        for point in movePlan:
+        for step in movePlan:
  
-            rcp.moveToPose(move_group,rcp.constructPose(movePlan[point]))
-            if point == "3":
+            if step == "3":
                 #Tile aproximation step
-                #Open gripperç
+                #Open gripper
+                move_group.set_max_velocity_scaling_factor(0.01)
+                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                gripper.goto(pos= gc.FULL_OPEN, vel = 0.1, force = 100)
+
+            elif step == "4":
+                move_group.set_max_velocity_scaling_factor(0.01)
+                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+
+                #Teporaly dactivate tile_rack collision
+                scene.remove_attached_object(referenceFrameId,"tile_rack")
+                scene.remove_world_object("tile_rack")
+            
+                #TODO Add tile to scene
+            elif step == "6":
+                move_group.set_max_velocity_scaling_factor(0.01)
+                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+
+                #Grip tile
+                gripper.goto(pos= gc.FULL_CLOSE, vel = 0.05, force = 80)
+            elif step == "9":
+                move_group.set_max_velocity_scaling_factor(0.01)
+                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                sm.loadScene("mainScene",scene)
+            else:
+                move_group.set_max_velocity_scaling_factor(0.01)
+                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+
                 
-                gripper.goto(pos= gc.FULL_OPEN, vel = 0.100, force = 100)
+
+                
+                
 
                 
     
