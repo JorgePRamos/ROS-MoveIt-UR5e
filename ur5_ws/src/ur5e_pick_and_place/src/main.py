@@ -99,8 +99,6 @@ if __name__ == '__main__':
             #self.cur_status.gOBJ == 1 or self.cur_status.gOBJ == 2
             gripper.goto(pos= gc.FULL_CLOSE, vel = 0.100, force = 100)
 
-            print("Gripper closed")
-            print("Object detected: ---->  TRUE")
         
             loop = input("Press enter to run test again Other to exit...")
 
