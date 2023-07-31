@@ -55,6 +55,12 @@ if __name__ == '__main__':
     scene.remove_world_object("tile_rack")
     
     """
+    touch_links = robot.get_link_names(group="gripper")
+
+    
+    sm.newObjectToScene(referenceFrameId,scene,"tile",[0.29,0.29,0.01],[-0.12,-0.36,0.37])
+    scene.attach_box("tool0","tile",touch_links= touch_links)
+    
     userInput = input("Introduce < P > for planning mode or < E > for execution mode:  ")
     
     if str.upper(userInput) == "P":
@@ -80,6 +86,25 @@ if __name__ == '__main__':
  
         with open("plan.json", "w") as outfile:
             json.dump(outPutPlan, outfile)
+    
+    elif str.upper(userInput) == "T":
+        print("<=  Test mode  =>")
+        loop = ""
+        while(loop == ""):
+            gripper.goto(pos= gc.FULL_OPEN, vel = 0.100, force = 100)
+            
+            
+       
+            userInput = input("Press enter to close gripper")
+            #self.cur_status.gOBJ == 1 or self.cur_status.gOBJ == 2
+            gripper.goto(pos= gc.FULL_CLOSE, vel = 0.100, force = 100)
+
+            print("Gripper closed")
+            print("Object detected: ---->  TRUE")
+        
+            loop = input("Press enter to run test again Other to exit...")
+
+    
     else:
         print("<=  Execution mode  =>")
         movePlan = {}
@@ -94,18 +119,32 @@ if __name__ == '__main__':
 
         
         #Execute move plan
+        
+        
         for step in movePlan:
  
+ 
+            if step == "o":
+                print("Move to origin")
+                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                               
+     
             if step == "3":
                 #Tile aproximation step
                 #Open gripper
-                move_group.set_max_velocity_scaling_factor(0.01)
-                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                move_group.set_max_velocity_scaling_factor(0.05)
+                #rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                waypoints = []
+                waypoints.append(rcp.constructPose(movePlan[step]))
+                rcp.executePath(move_group,waypoints,0.5)
                 gripper.goto(pos= gc.FULL_OPEN, vel = 0.1, force = 100)
 
             elif step == "4":
-                move_group.set_max_velocity_scaling_factor(0.01)
-                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                move_group.set_max_velocity_scaling_factor(0.05)
+                #rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                waypoints = []
+                waypoints.append(rcp.constructPose(movePlan[step]))
+                rcp.executePath(move_group,waypoints,0.5)
 
                 #Teporaly dactivate tile_rack collision
                 scene.remove_attached_object(referenceFrameId,"tile_rack")
@@ -113,18 +152,27 @@ if __name__ == '__main__':
             
                 #TODO Add tile to scene
             elif step == "6":
-                move_group.set_max_velocity_scaling_factor(0.01)
-                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                move_group.set_max_velocity_scaling_factor(0.05)
+                #rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                waypoints = []
+                waypoints.append(rcp.constructPose(movePlan[step]))
+                rcp.executePath(move_group,waypoints,0.5)
 
                 #Grip tile
                 gripper.goto(pos= gc.FULL_CLOSE, vel = 0.05, force = 80)
             elif step == "9":
-                move_group.set_max_velocity_scaling_factor(0.01)
-                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                move_group.set_max_velocity_scaling_factor(0.05)
+                #rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                waypoints = []
+                waypoints.append(rcp.constructPose(movePlan[step]))
+                rcp.executePath(move_group,waypoints,0.5)
                 sm.loadScene("mainScene",scene)
             else:
-                move_group.set_max_velocity_scaling_factor(0.01)
-                rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                move_group.set_max_velocity_scaling_factor(0.05)
+                #rcp.moveToPose(move_group,rcp.constructPose(movePlan[step]))
+                waypoints = []
+                waypoints.append(rcp.constructPose(movePlan[step]))
+                rcp.executePath(move_group,waypoints,0.5)
 
                 
 

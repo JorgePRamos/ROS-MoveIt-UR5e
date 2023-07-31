@@ -45,12 +45,14 @@ def constructPose(pointsArray):
 def executePath(moveGRoup,targetPose, speed_scaling, max_retrials = 3):
         (plan, fraction) = moveGRoup.compute_cartesian_path(targetPose,0.005,0.0)
         # retime trajectory
-        state = moveGRoup.robot.get_current_state()
+        state = moveGRoup.get_current_state()
         plan = moveGRoup.retime_trajectory(state,plan,speed_scaling)
         cnt = 0
         while cnt<max_retrials:
             cnt += 1
             response = moveGRoup.execute(plan, wait=True)
+            print(">> response: ",response)
             if(response):
+                print(">> Executed")
                 return True
             rospy.sleep(0.5)

@@ -36,6 +36,8 @@ def loadMainScene(scene):
     
 
     
+
+    
 def newObjectToScene(referenceFrameId, scene, newObjectId, dimensions, pose):
     object = CollisionObject()
     object.id = newObjectId
