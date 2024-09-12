@@ -8,5 +8,5 @@ This repository is aimed to provided a needed starting point for any project whi
 - [Ubuntu Focal Fossa](https://releases.ubuntu.com/focal/)
 
 
-![alt text](Docs\Media\sim_cobot.png "Rviz cobot set up")
+![alt text](/Docs/Media/sim_cobot.png "Rviz cobot set up")
 
