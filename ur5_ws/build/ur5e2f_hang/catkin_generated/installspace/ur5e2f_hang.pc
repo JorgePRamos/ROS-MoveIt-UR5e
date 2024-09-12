@@ -1,0 +1,8 @@
+prefix=/home/bicrobotics/ROS-MoveIt-UR5e/ur5_ws/install
+
+Name: ur5e2f_hang
+Description: Description of ur5e2f_hang
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

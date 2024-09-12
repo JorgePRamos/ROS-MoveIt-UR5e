@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<robot name="table" xmlns:xacro="http://ros.org/wiki/xacro">
+
+<!--Bottom table-->
+  <link name="frame_base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.94 1.46 0.04"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.94 1.46 0.04"/>
+      </geometry>
+    </collision>
+  </link>
+
+<!--Legs-->
+
+  <link name="leg_1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 1.1"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.42 0 0"/>
+      <geometry>
+        <box size="0.94 0.05 1.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="joint_1" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.42 -0.68 0.57"/>
+    <parent link="frame_base_link"/>
+    <child link="leg_1"/>
+  </joint>
+
+
+
+  <link name="leg_2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 1.1"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0.68 0"/>
+      <geometry>
+        <box size="0.05 1.46 1.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+
+
+  <joint name="joint_2" type="fixed">
+    <origin rpy="0 0 0" xyz="0.42 -0.68 0.57"/>
+    <parent link="frame_base_link"/>
+    <child link="leg_2"/>
+  </joint>
+
+
+
+  <link name="leg_3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 1.1"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -0.68 0"/>
+      <geometry>
+        <box size="0.05 1.46 1.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="joint_3" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.42 0.68 0.57"/>
+    <parent link="frame_base_link"/>
+    <child link="leg_3"/>
+  </joint>
+
+
+
+  <link name="leg_4">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 1.1"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.42 0 0"/>
+      <geometry>
+        <box size="0.94 0.05 1.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="joint_4" type="fixed">
+    <origin rpy="0 0 0" xyz="0.42 0.68 0.57"/>
+    <parent link="frame_base_link"/>
+    <child link="leg_4"/>
+  </joint>
+
+<!--Table top-->
+  <link name="top_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.94 1.46 0.055"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.94 1.46 0.055"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="joint_top" type="fixed">
+    <origin rpy="0 0 0" xyz="0.42 -0.68 0.57"/>
+    <parent link="leg_3"/>
+    <child link="top_link"/>
+  </joint>
+</robot>

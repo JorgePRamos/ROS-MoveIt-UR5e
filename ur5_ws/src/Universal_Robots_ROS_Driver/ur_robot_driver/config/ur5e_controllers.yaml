@@ -12,6 +12,7 @@ ur_hardware_interface:
      - wrist_2_joint
      - wrist_3_joint
 
+
 # Publish all joint states ----------------------------------
 joint_state_controller:
    type:         joint_state_controller/JointStateController

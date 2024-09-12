@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="ur5e_robotiq">
+    
+    <!--Import frame-->
+    <xacro:include filename="$(find ur5e2f_hang)/urdf/frame.xacro"/>
+
+    <!--Import the ur5e robot-->
+    <xacro:include filename="$(find ur_description)/urdf/ur5e.xacro"/>
+
+    <!--Import the robotiq gripper-->
+    <xacro:include filename="$(find robotiq_2f_85_gripper_visualization)/urdf/robotiq_arg2f_85.xacro"/>
+
+
+    <!--Join the UR5e with the frame Box-->
+    <joint name="block_ur5_connection" type="fixed">
+        <origin xyz="0 0 -0.0275" rpy="0 ${radians(180)} ${radians(90)}"/>
+        <parent link="top_link"/>
+        <child link="base_link"/>
+        <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+    
+
+    <!--Join ur5 and robotiq gripper-->
+    <joint name="tool0_gripper_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 1.57"/>
+        <parent link="tool0"/>
+        <child link="gripper_base_link"/>
+        <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+
+   
+
+<gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+  </plugin>
+</gazebo>
+
+</robot>

@@ -9,6 +9,8 @@ roslib.load_manifest('robotiq_2f_gripper_control')
 
 import rospy
 from robotiq_2f_gripper_control.msg import Robotiq2FGripper_robot_output as outputMsg
+
+
 from robotiq_2f_gripper_control.msg import Robotiq2FGripper_robot_input as inputMsg
 
 class RobotiqCGripper(object):
@@ -16,7 +18,8 @@ class RobotiqCGripper(object):
         self.cur_status = None
         self.status_sub = rospy.Subscriber('Robotiq2FGripperRobotInput', inputMsg,
                                            self._status_cb)
-        self.cmd_pub = rospy.Publisher('Robotiq2FGripperRobotOutput', outputMsg)
+        self.cmd_pub = rospy.Publisher('Robotiq2FGripperRobotOutput', outputMsg,queue_size=20)
+      
 
     def _status_cb(self, msg):
         self.cur_status = msg
