@@ -29,3 +29,4 @@ I hold this repository really close to my heart, since it represents my take on 
 I hope you find this repository helpful and if so a star is always appreciated ;)
 
 
+![alt text](/Docs/Media/composed.png "ROB and me")
